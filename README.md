@@ -21,12 +21,12 @@ Then i decided i would create a small 'wooden house' and some trees. Here is my 
 ## Technical Issues Faced
 
 1) Emitting light from some object and making the sun appear 'lit'.  
-I was able to find example code for an object emitting light on the three.js decomentation page. It was not working when i first implemented it because the light would not show at all, and noticed later that it was because a parameter in the THREE.PointLight function is what would increase the 'range' of the light.  
+I was able to find example code for an object emitting light on the three.js decomentation page. It was not working when i first implemented it, the light would not show at all. I noticed later that it was because the last parameter in the THREE.PointLight function is what changed the 'range' of the light.  
 ```javascript 
 var pointLight = new THREE.PointLight( 0xFFFFE0, intensity, 10000 );  
-```  
- <a href="https://imgur.com/26JEpZQ"><img src="https://i.imgur.com/26JEpZQ.png" title="source: imgur.com" /></a>    
-  - the last parameter '10000' was originally 10 in the example code...      
+```    
+- the last parameter '10000' was originally 10 in the example code and thus didn't do much for my large-sized project...  
+ <a href="https://imgur.com/26JEpZQ"><img src="https://i.imgur.com/26JEpZQ.png" title="source: imgur.com" /></a>  
 I later found that it's the material of the sun's mesh that would not allow it to appear like it was emitting any light as well, and so i changed it from Phong to Basic material.    
 <a href="https://imgur.com/Nvpzudz"><img src="https://i.imgur.com/Nvpzudz.png" title="source: imgur.com" /></a>  
   - how it looked when it was a Phong material
