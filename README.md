@@ -1,3 +1,6 @@
 # graphicsPlanet
 
-<img src="images/planet1.PNG" alt="hi" class="inline"/>
+<img src="graphicsPlanet/images/planet1.PNG" alt="hi" class="inline"/>
+
+    
+      
