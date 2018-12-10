@@ -1,3 +1,3 @@
 # graphicsPlanet
 
-![alt text](https://imgur.com/pK9vW4K)
+<img src="images/planet1.png" alt="hi" class="inline"/>
